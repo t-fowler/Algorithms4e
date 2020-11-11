@@ -28,6 +28,14 @@ int read_ints(int *a)
     return N;
 }
 
+void copy_ints(int *orig, int *copy, int N)
+{
+    int *end = copy + N - 1;
+    while (copy <= end) {
+        *copy++ = *orig++;
+    }
+}
+
 /* prints an array of ints */
 void print_ints(int a[], int N)
 {

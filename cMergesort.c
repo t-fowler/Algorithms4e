@@ -1,16 +1,6 @@
 #include "cSortUtil.h"
 #include "cMergesort.h"
-
-/* a simple sorting algorithm that works like sorting a card hand */
-void insertion_sort(int a[], int N)
-{
-    for (int i = 1; i < N; i++) {
-        for (int j = i; j > 0; j--) {
-            if (a[j] < a[j-1]) 
-                _exchange(a, j, j-1);
-        }
-    }
-}
+#include "cInsertionsort.h"
 
 /*********************************************
  * _merge takes 2 sequential sorted sections *

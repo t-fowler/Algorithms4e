@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-#define MAX_INPUT_SIZE 500
+#define MAX_INPUT_SIZE 100000
 #define NUMBER_RANGE 100
 #define DEBUG
 
@@ -14,5 +14,7 @@ bool is_sorted(int a[], int N);
 int read_ints(int *a);
 
 void print_ints(int a[], int N);
+
+void copy_ints(int *orig, int *copy, int N);
 
 #endif
